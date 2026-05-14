@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>S2G TEAM</title>
+    <title>S2G TEAM</title>
     <style>
-  /* GITHUB-IN AVTOMATIK YAZISINI VE BOSLUGUNU SILEN HISSE */
+        /* GITHUB-IN AVTOMATIK BASLIGINI KOKUNDEN SILEN HISSE */
         header.page-header, 
         .project-name, 
         .project-tagline, 
-        footer.site-footer {
+        .site-footer {
             display: none !important;
             visibility: hidden !important;
             height: 0 !important;
             padding: 0 !important;
             margin: 0 !important;
+            opacity: 0 !important;
         }
 
         section.main-content {
@@ -22,8 +23,7 @@
             padding: 0 !important;
             margin: 0 !important;
         }
-        
-        
+
         /* ÜMUMİ SIFIRLAMA */
         * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
         
@@ -33,6 +33,8 @@
             color: #4A148C;
             text-transform: uppercase;
             -webkit-tap-highlight-color: transparent;
+            margin: 0;
+            padding: 0;
         }
 
         /* HEADER - ARXA FON */
@@ -48,7 +50,7 @@
             background: url('https://gamingonphone.com/wp-content/uploads/2023/01/PUBG-Mobile-S2G-Esports-champions-PMGC-2022.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* PC-də sürüşəndə qəşəng görünür */
+            background-attachment: fixed;
             color: white;
             padding: 20px;
         }
@@ -85,7 +87,7 @@
         }
 
         .main-logo {
-            width: clamp(100px, 15vw, 150px); /* Ekran ölçüsünə görə dəyişir */
+            width: clamp(100px, 15vw, 150px);
             height: clamp(100px, 15vw, 150px);
             border-radius: 50%;
             border: 5px solid #FFD700;
@@ -117,7 +119,6 @@
             margin: 0 auto;
             padding: 50px 20px;
             display: grid;
-            /* Kompüterdə yanaşı, teldə tək sütun üçün ağıllı nizam */
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
         }
@@ -166,11 +167,11 @@
         /* MOBİL ÜÇÜN XÜSUSİ DÜZƏLİŞLƏR */
         @media (max-width: 768px) {
             .header {
-                background-attachment: scroll; /* Mobildə donma olmasın deyə */
+                background-attachment: scroll;
                 background-position: center;
             }
             .container {
-                grid-template-columns: 1fr; /* Teldə mütləq tək sütun */
+                grid-template-columns: 1fr;
                 padding: 30px 15px;
             }
             .card {
