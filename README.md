@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <style>
+      /* GitHub-ın avtomatik başlıqlarını və o sol üstdəki yazını gizlədir */
+header.page-header {
+    display: none !important;
+}
+
+section.main-content {
+    padding-top: 0 !important;
+}
+        
+        
         /* ÜMUMİ SIFIRLAMA */
         * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
         
