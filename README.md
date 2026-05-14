@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <style>
-      /* GitHub-ın avtomatik başlıqlarını və o sol üstdəki yazını gizlədir */
-header.page-header {
-    display: none !important;
-}
+  /* GITHUB-IN AVTOMATIK YAZISINI VE BOSLUGUNU SILEN HISSE */
+        header.page-header, 
+        .project-name, 
+        .project-tagline, 
+        footer.site-footer {
+            display: none !important;
+            visibility: hidden !important;
+            height: 0 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
 
-section.main-content {
-    padding-top: 0 !important;
-}
+        section.main-content {
+            max-width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
         
         
         /* ÜMUMİ SIFIRLAMA */
