@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>S2G TEAM | MOBİL PANEL</title>
+    <title>S2G TEAM | OFFICIAL</title>
     <style>
-        /* ƏSAS MOBİL AYARLAR */
+        /* ÜMUMİ SIFIRLAMA */
         * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
         
         body {
@@ -13,32 +13,33 @@
             background: #F3E5F5;
             color: #4A148C;
             text-transform: uppercase;
-            -webkit-tap-highlight-color: transparent; /* Mobilde göy kölgəni silir */
+            -webkit-tap-highlight-color: transparent;
         }
 
-        /* HEADER - MOBİL GÖRÜNÜŞÜ */
+        /* HEADER - ARXA FON */
         .header {
             height: 100vh;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             position: relative;
-            /* Çempionluq şəkli */
             background: url('https://gamingonphone.com/wp-content/uploads/2023/01/PUBG-Mobile-S2G-Esports-champions-PMGC-2022.jpg');
             background-size: cover;
-            background-position: center; /* Şəkli teldə ortalayır */
+            background-position: center;
+            background-attachment: fixed; /* PC-də sürüşəndə qəşəng görünür */
             color: white;
             padding: 20px;
         }
 
-        /* Arxa fonun yazıları boğmaması üçün tünd qat */
+        /* QARALTMA QATI */
         .header::before {
             content: "";
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.55);
             z-index: 1;
         }
 
@@ -46,104 +47,116 @@
             position: relative;
             z-index: 2;
             width: 100%;
+            max-width: 1200px;
         }
 
         .champ-tag {
-            font-size: 1.1rem;
+            font-size: clamp(1rem, 4vw, 1.8rem);
             color: #FFD700;
-            letter-spacing: 4px;
-            margin-bottom: 10px;
+            letter-spacing: 6px;
+            margin-bottom: 15px;
             text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
         }
 
-        /* LOQO VƏ MOBİL DÖNMƏ EFFEKTİ */
+        /* LOQO EFFEKTİ */
         .logo-wrapper {
             display: inline-block;
             text-decoration: none;
-            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         .main-logo {
-            width: 110px;
-            height: 110px;
+            width: clamp(100px, 15vw, 150px); /* Ekran ölçüsünə görə dəyişir */
+            height: clamp(100px, 15vw, 150px);
             border-radius: 50%;
-            border: 4px solid #FFD700;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            border: 5px solid #FFD700;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
             display: block;
         }
 
-        /* Teldə toxunanda və ya üzərinə gələndə fırlanma */
-        .logo-wrapper:active, .logo-wrapper:hover {
+        .logo-wrapper:hover, .logo-wrapper:active {
             transform: rotate(15deg) scale(1.1);
         }
 
         .title-link {
-            font-size: 2.2rem;
+            font-size: clamp(2rem, 8vw, 5rem);
             text-decoration: none;
             color: white;
             display: block;
-            margin-top: 15px;
-            text-shadow: 2px 2px 12px rgba(0,0,0,1);
+            margin-top: 20px;
+            text-shadow: 2px 2px 15px rgba(0,0,0,1);
+            transition: 0.3s ease;
         }
 
-        /* ÜZVLƏR - MOBİLDƏ ALT-ALTA */
+        .title-link:hover {
+            color: #FFD700;
+        }
+
+        /* ÜYELER SİSTEMİ (GRID) */
         .container {
-            padding: 20px;
-            display: grid;
-            grid-template-columns: 1fr; /* Mobildə tək sütun */
-            gap: 12px;
-            max-width: 500px;
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 50px 20px;
+            display: grid;
+            /* Kompüterdə yanaşı, teldə tək sütun üçün ağıllı nizam */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
 
         .card {
-            background: #fff;
-            padding: 15px;
+            background: #ffffff;
+            padding: 20px;
             border-radius: 15px;
             text-decoration: none;
             display: flex;
             align-items: center;
             gap: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            border-left: 0px solid #FFD700;
-            transition: 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            transition: 0.3s ease;
+            border: 1px solid transparent;
         }
 
-        .card:active { /* Teldə basanda reaksiya */
-            background: #FAF5FF;
-            transform: scale(0.98);
-            border-left: 6px solid #FFD700;
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #FFD700;
+            box-shadow: 0 10px 20px rgba(106, 27, 154, 0.15);
         }
 
         .card img {
-            width: 45px;
-            height: 45px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
-            background: #eee;
+            border: 2px solid #f3e5f5;
         }
 
         .card h2 {
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: #4A148C;
             letter-spacing: 0.5px;
         }
 
         footer {
             text-align: center;
-            padding: 40px 20px;
-            font-size: 0.7rem;
+            padding: 50px 20px;
+            font-size: 0.8rem;
             color: #888;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            background: #fff;
         }
 
-        /* PLANŞET VƏ KOMPÜTER ÜÇÜN GENİŞLƏNMƏ */
-        @media (min-width: 768px) {
-            .container {
-                grid-template-columns: 1fr 1fr;
-                max-width: 1000px;
+        /* MOBİL ÜÇÜN XÜSUSİ DÜZƏLİŞLƏR */
+        @media (max-width: 768px) {
+            .header {
+                background-attachment: scroll; /* Mobildə donma olmasın deyə */
+                background-position: center;
             }
-            .main-logo { width: 140px; height: 140px; }
-            .title-link { font-size: 4rem; }
+            .container {
+                grid-template-columns: 1fr; /* Teldə mütləq tək sütun */
+                padding: 30px 15px;
+            }
+            .card {
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -159,7 +172,7 @@
             
             <a href="https://www.tiktok.com/@s2gespor" target="_blank" class="title-link">S2G TEAM</a>
             
-            <p style="margin-top: 20px; font-size: 9px; opacity: 0.8; letter-spacing: 2px;">ÜYELER İÇİN AŞAĞI KAYDIR</p>
+            <p style="margin-top: 30px; font-size: 11px; letter-spacing: 3px; opacity: 0.9;">KAYDIRARAK ÜYELERİ GÖR</p>
         </div>
     </header>
 
@@ -215,7 +228,7 @@
     </div>
 
     <footer>
-        S2G TEAM PRODUCTION © 2026
+        S2G TEAM PRODUCTION © 2026 | TÜM HAKLARI SAKLIDIR
     </footer>
 
 </body>
