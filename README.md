@@ -197,6 +197,31 @@
     </header>
 
     <div class="container" id="members">
+        <a href="https://www.tiktok.com/@crash_pubgmmm?lang=tr-TR" target="_blank" class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBv_P3V_CitVwYsL5HD2QwF8RmqeFSOWfWg&s">
+            <h2>S2GCrashV99</h2>
+        </a>
+        <a href="https://www.tiktok.com/@sumeyyepubg?lang=tr-TR" target="_blank" class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBv_P3V_CitVwYsL5HD2QwF8RmqeFSOWfWg&s">
+            <h2>S2GSUMEYYE</h2>
+        </a>
+        <a href="https://www.tiktok.com/@90fps_pubgm74" target="_blank" class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBv_P3V_CitVwYsL5HD2QwF8RmqeFSOWfWg&s">
+            <h2>S2G90FPS</h2>
+        </a>
+
+        <a href="https://www.tiktok.com/@bestrotz?lang=tr-TR" target="_blank" class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBv_P3V_CitVwYsL5HD2QwF8RmqeFSOWfWg&s">
+            <h2>S2GTROTZ</h2>
+        </a>
+        <a href="https://www.tiktok.com/@cyrex.pm?lang=tr-TR" target="_blank" class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBv_P3V_CitVwYsL5HD2QwF8RmqeFSOWfWg&s">
+            <h2>S2GCYREX</h2>
+        </a>
+        <a href="https://www.tiktok.com/@lizard_pubgmm?lang=tr-TR" target="_blank" class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBv_P3V_CitVwYsL5HD2QwF8RmqeFSOWfWg&s">
+            <h2>S2GLizardV99</h2>
+        </a>
         <a href="https://www.tiktok.com/@buluteditss7" target="_blank" class="card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBv_P3V_CitVwYsL5HD2QwF8RmqeFSOWfWg&s">
             <h2>BULUTEDITSS7</h2>
